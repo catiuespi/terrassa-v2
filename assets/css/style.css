@@ -429,41 +429,20 @@
 }
 
 .footer__social__link {
-	background-color: var(--primary-text);
 	border-radius: 50%;
-	color: var(--white);
+	color: rgb(29, 29, 155);
 	font-size: var(--subheader);
 	height: 35px;
 	line-height: 35px;
 	position: relative;
 	text-align: center;
 	width: 35px;
-}
-
-.footer__social__link::after {
-	background: transparent;
-	border: 1.5px solid var(--primary-text);
-	border-radius: 50%;
-	bottom: 0;
-	content: "";
-	display: block;
-	left: 0;
-	position: absolute;
-	right: 0;
-	top: 0;
-	transition: 0.3s all;
+	transition: 0.2s;
 }
 
 .footer__social__link:hover,
 .footer__social__link:focus {
-	background-color: transparent;
-	color: var(--secondary-text);
-}
-
-.footer__social__link:hover::after,
-.footer__social__link:focus::after {
-	border-color: var(--secondary-text);
-	transform: scale(1.5);
+	transform: scale(1.2);
 }
 
 .footer__contact {

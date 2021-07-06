@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main class="contact">
-    <h1 class="contact__title">{{ .Title }}</h1>
+    <h1 class="contact__title" style="font-weight: bold;">{{ .Title }}</h1>
     <p class="contact__content">{{ .Description }}</p>
 
     {{ if $.Site.Params.form.netlify }}
@@ -12,7 +12,7 @@
 
             <!-- Name -->
             <div class="contact__field contact__field--name">
-                <label for="{{ $.Site.Params.form.inputNameName }}">{{ $.Site.Params.form.inputNameLabel }}</label>
+                <label for="{{ $.Site.Params.form.inputNameName }}" style="font-weight: 700;">{{ $.Site.Params.form.inputNameLabel }}</label>
                 <input type="text" name="{{ $.Site.Params.form.inputNameName }}" placeholder="{{ $.Site.Params.form.inputNamePlaceholder }}"
                     class="contact__form__input contact__form__name" id="{{ $.Site.Params.form.inputNameName }}"
                     aria-labelledby="{{ $.Site.Params.form.inputNameName }}" required>
@@ -20,7 +20,7 @@
 
             <!-- Email -->
             <div class="contact__field contact__field--email">
-                <label for="{{ $.Site.Params.form.inputEmailName }}">{{ $.Site.Params.form.inputEmailLabel }}</label>
+                <label for="{{ $.Site.Params.form.inputEmailName }}" style="font-weight: 700;">{{ $.Site.Params.form.inputEmailLabel }}</label>
                 <input type="email" name="{{ $.Site.Params.form.inputEmailName }}" placeholder="{{ $.Site.Params.form.inputEmailPlaceholder }}"
                     class="contact__form__input contact__form__email" id="{{ $.Site.Params.form.inputEmailName }}"
                     aria-labelledby="{{ $.Site.Params.form.InputEmailName }}" required>
@@ -28,7 +28,7 @@
 
             <!-- Message -->
             <div class="contact__field contact__field--msg">
-                <label for="{{ $.Site.Params.form.inputMsgName }}">{{ $.Site.Params.form.inputMsgLabel }}</label>
+                <label for="{{ $.Site.Params.form.inputMsgName }}" style="font-weight: 700;">{{ $.Site.Params.form.inputMsgLabel }}</label>
                 <textarea name="{{ $.Site.Params.form.inputMsgName }}" id="{{ $.Site.Params.form.inputMsgName }}" form="contactForm"
                     maxlength="{{ $.Site.Params.form.inputMsgLength }}" id="{{ $.Site.Params.form.inputMsgName }}"
                     arial-labelledby="{{ $.Site.Params.form.InputMsgName }}" required></textarea>
