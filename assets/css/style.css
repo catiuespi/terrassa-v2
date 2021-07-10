@@ -234,8 +234,8 @@
 	display: grid;
 	grid-template-areas: "title" "date" "subtitle" "author";
 	grid-template-rows: auto;
-	justify-content: center;
-	padding: 0 20%;
+	/* justify-content: center; */
+	padding: 0 24%;
 }
 
 .post__title {
@@ -430,7 +430,6 @@
 
 .footer__social__link {
 	border-radius: 50%;
-	color: rgb(29, 29, 155);
 	font-size: var(--subheader);
 	height: 35px;
 	line-height: 35px;
@@ -439,6 +438,23 @@
 	width: 35px;
 	transition: 0.2s;
 }
+
+.fa-facebook{
+	color: #1877f2;
+}
+
+.fa-instagram{
+	color: #e1306c;
+}
+
+.fa-twitter{
+	color: #1da1f2;
+}
+
+.fa-youtube{
+	color: #ff0000;
+}
+
 
 .footer__social__link:hover,
 .footer__social__link:focus {
